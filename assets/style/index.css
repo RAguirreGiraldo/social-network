@@ -1,0 +1,137 @@
+@import "./reset.css";
+
+:root {
+    --app-dark-bg:#1a1d28;
+    --app-red:#ff3c57;
+    --app-green:#33ab4e;
+    --app-purple:#833cff;
+    --app-orange:#ff833c;
+    --app-orange-hover:#fe7a2d;
+    --app-blue:#3c57ff;
+    --app-blue-hover:#364ee6;
+    --app-light-bg: #ffffff;
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+body {
+    background-color: var(--app-dark-bg);
+}
+
+header {
+    min-width: 100%;
+    background: var(--app-dark-bg);
+    overflow: hidden;
+}
+
+.flexbox {
+   display:flex;
+   justify-content: space-between;
+   align-items: center;   
+}
+
+.title {
+    width: 15%;
+    height: 56px;
+}
+
+.title h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 56px;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+}
+
+nav {
+    width: 60;
+    text-align: right;
+}
+
+nav ul {
+    /* Removind the bullet points from the list */
+    list-style: none;
+    font-size: 0;
+}
+
+nav ul li {
+    display: inline; /*move the li side to side */
+    line-height: 56px;
+    cursor: default;
+}
+
+ nav ul li a {
+    font-size: 17px;
+    color:#fff;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.4px;
+    cursor:pointer;
+}
+
+nav ul li + li  {
+    /* Removind the bullet points from the list */
+    margin-left: 20px;
+    /*list-style: none;*/
+}
+
+ nav ul li a:hover {
+    text-decoration: underline;
+    background-color: #723fcf;
+}
+        /* begin form */
+
+form{
+    margin-top: 4px;
+    font-size: 0;         
+}
+
+input[type="text"] {
+    width: 250px;
+    margin-bottom: 10px;
+    height: var(--app-input-height);
+    padding: 0 20px 0 42px;
+    border: 1px solid rgba(228, 220, 220, 0.961);
+    border-radius: 45px;
+    font-size: 16px;
+    font-weight: 16px;
+    color:rgba(23, 22, 22, 0.837);
+    text-align: left;
+    background: rgba(225, 220, 220, 0.908) url(../img/search-xxl.png) no-repeat 14px 14px;
+    background-size: 15px;
+    transition: border-color 0.25s ease-in-out;   /*always transition is in parents class*/
+}
+
+.center {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+}
+
+.row + .row {
+    margin-top: 10px;
+}
+
+.row  .column {
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 0.1);
+}
+
+.column + .column {
+    margin-left: 20px;
+}
+
+.column .icon {
+    width: 100px;
+    height: 100%;
+    border-right: 1px solid rgb(0 0 0 / 0.1);
+}
