@@ -4,13 +4,7 @@ class Post  {
       this.postDate = _postDate;
       this.description = _description;
     }
-
-    constructor(_name, _city, _email) {
-      this.name = _name;
-      this.city = _city;
-      this.email = _email;
-  }
-
+    
   get Id() {
       return this.id;
   }

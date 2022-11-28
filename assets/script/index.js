@@ -1,17 +1,11 @@
 'use strict';
 
 import Contact from './Contact.js'
-// con document get by id traigo del dom mi informacion del boton y despues con el add
-//eventlistener escucho la propiedad del evento en este caso click y llamo la funcion new Conact.
 document.getElementById('submit-btn').addEventListener("click", newContact);
 
-let arrayObj=[] ;
+let arrayObj=[];
 let errormsm = '';
 
-//mi constante para incrementar los usuarios que voy agregando
-const contactzone = document.getElementById('contactzone') ;
-
-/* Function validate data and email*/
 function validateQuantity(data) {    
     let arrayData = data.split(",");    //separa el string y lo convierte en posicion en array 
 
