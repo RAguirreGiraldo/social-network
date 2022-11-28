@@ -2,4 +2,4 @@
 
 ### Example in Web Page  
 
-[Add Contact](https://raguirregiraldo.github.io/my-contacts/)
+[Add Contact](https://raguirregiraldo.github.io/social-network/)

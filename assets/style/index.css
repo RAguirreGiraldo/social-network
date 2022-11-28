@@ -10,6 +10,7 @@
     --app-blue:#3c57ff;
     --app-blue-hover:#364ee6;
     --app-light-bg: #ffffff;
+    --app-gray:#4e4d4d;
 }
 
 .container {
@@ -41,7 +42,7 @@ header {
 .title h1 {
     font-size: 18px;
     font-weight: 600;
-    color: #fff;
+    color: var(--app-blue);
     line-height: 56px;
     text-transform: uppercase;
     letter-spacing: 0.2px;
@@ -66,7 +67,7 @@ nav ul li {
 
  nav ul li a {
     font-size: 17px;
-    color:#fff;
+    color:var(--app-light-bg);
     font-weight: 600;
     text-decoration: none;
     letter-spacing: 0.4px;
@@ -81,31 +82,11 @@ nav ul li + li  {
 
  nav ul li a:hover {
     text-decoration: underline;
-    background-color: #723fcf;
-}
-        /* begin form */
-
-form{
-    margin-top: 4px;
-    font-size: 0;         
+    background-color: var(--app-gray);
+    
 }
 
-input[type="text"] {
-    width: 250px;
-    margin-bottom: 10px;
-    height: var(--app-input-height);
-    padding: 0 20px 0 42px;
-    border: 1px solid rgba(228, 220, 220, 0.961);
-    border-radius: 45px;
-    font-size: 16px;
-    font-weight: 16px;
-    color:rgba(23, 22, 22, 0.837);
-    text-align: left;
-    background: rgba(225, 220, 220, 0.908) url(../img/search-xxl.png) no-repeat 14px 14px;
-    background-size: 15px;
-    transition: border-color 0.25s ease-in-out;   /*always transition is in parents class*/
-}
-
+/*  Por ir revisando el Centro*/
 .center {
     width: 100%;
 }
@@ -134,4 +115,67 @@ input[type="text"] {
     width: 100px;
     height: 100%;
     border-right: 1px solid rgb(0 0 0 / 0.1);
+}
+
+.main-container{
+   margin: 0px auto;
+   padding: 25px;
+   border-radius: 5px;
+}
+  
+.data-input, .contact-zone{    
+  padding: 20px 0;
+  margin: 30px 0;  
+}
+
+.data-input > h1, .contact-zone > h3 {
+  padding: 10px 0;
+  text-align: center;
+  font-size: 25px;   
+  color: var(--app-light-bg); 
+}
+  
+.data-input{
+    color:var(--app-light-bg);
+    text-align: center;
+}
+  
+.input-control{
+    background-color: var(--app-light-bg); 
+    width: 300px;
+    height: 200px;
+    padding: 0 10px 0 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 16px;
+    text-align-last: inherit;
+}
+  
+.contact-item{
+   color: var(--app-light-bg);
+   border-radius: 5px;
+   margin-top: 10px;
+   margin-right: 15px;
+}
+  
+button{
+  background-color: var(--app-blue);
+  color   : var(--app-light-bg);
+  font-size: 15px; 
+  margin-left: 12px;
+  width: 120px;
+  height: 35px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  transition: background-color 0.25s ease-in-out;
+}
+  
+.contact-zone{
+  padding: 5px;
+  margin: 5px;
+  display: flex;
 }

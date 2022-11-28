@@ -33,17 +33,21 @@
                 </nav> 
             </div>
         </header>
-        <section class="container">
-            <div class="calculator">
-                <form name="calc">
-                    <input id="hourwakeup" type="text" name="hourwakeup" class="number-one" placeholder="07:30"/>
-                    <input id="submit-btn" type="button" class="get-result" value="Post"/>
-                </form>
-                <section class="output">
-                    <p id="setalarm" name="setalarm"></p>
-                </section>
-            </div>         
-        </section>
+            <div class="container">
+                <div class="main-container">
+                    <div class="data-input">
+                        <div class="input-form">
+                            <input class="input-control" type="text" id="entrytext" name="entrytext"
+                                placeholder= "What's new, Roberto">
+                            <button type="button" id="submit-btn">Post</button>                
+                        </div>
+                        <div id="message" class="message"></div>
+                    </div>
+                    <div class="contact-container">
+                        <div class="contact-zone" id="contactZone"></div>
+                    </div>
+                </div>
+            </div>
        </main>      
     </body>
 </html>
