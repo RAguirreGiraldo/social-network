@@ -59,16 +59,3 @@ function newContact(){
         errormsm='';
     }
 }
-
-// Public to the Post
-document.getElementById('submit-btn').addEventListener("click", setAlarm);
-
-function setAlarm() {
-    let data = document.getElementById('hourwakeup').value;
-    document.getElementById('setalarm').innerHTML = "Your Alarma is Set at " + data;
-        
-    if(!data) {
-        output.innerText = 'Please input Valid Hour.';
-        return;
-    }       
-}
