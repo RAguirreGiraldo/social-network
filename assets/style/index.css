@@ -11,17 +11,6 @@
     --app-blue-hover:#364ee6;
     --app-light-bg: #ffffff;
 }
-:root {
-  --app-dark-bg:#1a1d28;
-  --app-red:#ff3c57;
-  --app-green:#33ab4e;
-  --app-purple:#833cff;
-  --app-orange:#ff833c;
-  --app-orange-hover:#fe7a2d;
-  --app-blue:#3c57ff;
-  --app-blue-hover:#364ee6;
-  --app-light-bg: #ffffff;
-}
 
 body {
 background: var(--app-dark-bg);
