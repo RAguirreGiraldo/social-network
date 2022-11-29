@@ -1,7 +1,22 @@
 'use strict';
-
 import Contact from './Contact.js'
+import User from "./User.js";
+
 document.getElementById('submit-btn').addEventListener("click", newContact);
+
+
+const x = new User(1,"beto","betouser","bf@g.com");
+console.log(x);
+//id
+document.getElementById("user").innerHTML= x.id;
+//name
+document.getElementById("user").innerHTML= x.name;
+//username
+document.getElementById("user").innerHTML= x.userName;
+//email
+document.getElementById("user").innerHTML= x.email;
+
+
 
 let arrayObj=[];
 let errormsm = '';

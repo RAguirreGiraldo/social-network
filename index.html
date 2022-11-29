@@ -18,40 +18,44 @@
         <title>My Social Network</title>
     </head>
     <body>
-        <header>
-            <div class="container flexbox">
+        <div class="container">
+            <div class="header">
                 <div class="title">
-                    <h1>FakeBook</h1>
+                    <h1 class="brand">FAKEBOOK</h1>
                 </div>
-                <nav>
+                <div class="menu">
                     <ul>
-                        <li><a href='#'>Friend </a></li>
-                        <li><a href='#'>Pages </a></li>
-                        <li><a href='#'>Groups</a></li>
-                        <li><a href='#'>My Ads</a></li>
-                        <li><a href='#'>Settings</a></li>
+                        <li><a class="btn-menu">Friends</a></li>
+                        <li><a class="btn-menu">Pages</a></li>
+                        <li><a class="btn-menu">Groups</a></li>
+                        <li><a class="btn-menu">My ads</a></li>
+                        <li><a class="btn-menu">Settings</a></li>
                     </ul>
-                </nav> 
+                </div>
+                <div class="img-zone">
+                    <img src="./assets/img/movies.jpeg" class="img-user">
+                </div>
             </div>
-            <link rel="icon" type="image/jpg" href="/favicon.jpg"/>
-        </header>
+        </div>
         <div class="container">
             <div class="main-container">
                 <div class="data-input">
                     <div class="input-form">
                         <input class="input-control" type="text" id="entrytext" name="entrytext"
-                            placeholder="What's New Roberto" >
-                        <button type="button" id="submit-btn">Post</button>                
+                            placeholder="What are you feeling, Roberto?">
+                        <input type="file" id="imgpath" hidden>
+                        <button type="button" id="submit-btn">Post</button>
+                        <label for="imgpath" class="imgpath">
+                            <img src="./assets/img/arrow-down.svg" alt="">
+                        </label>
                     </div>
                     <div id="message" class="message"></div>
                 </div>
-                <div class="grid-item1">
-                    <div class="contact-container">
-                        <div class="contact-zone" id="contactZone"></div>
-                    </div>
-                </div>
-
-
+            </div>
+        </div>
+        <div class="container">
+            <div class="main-container">
+                <p id="post-content" class="post-content"></p>
             </div>
         </div>
     </body>

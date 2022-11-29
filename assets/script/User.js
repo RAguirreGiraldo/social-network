@@ -1,25 +1,31 @@
-class User{
+export default class User{
+
     constructor(_id, _name, _userName, _email){
-        this._id = _id;
-        this._name = _name;
-        this._userName = _userName;
-        this._email = _email;
+        this.id = _id;
+        this.name = _name;
+        this.userName = _userName;
+        this.email = _email;
     }
 
-    get getId(){
+    get #getId(){
         return this._id;
     }
 
-    get getName(){
+    get #getName(){
         return this._name;
     }
 
-    get getEmail(){
+    get #getEmail(){
         return this._email;
     }
 
-    get getUsername(){
+    get #getUsername(){
         return this._username;
+    }
+
+    getInfo(id, userName, email, name){ 
+        info = [ id,userName,email,name ];
+        return info;
     }
     
 }
