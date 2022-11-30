@@ -46,7 +46,7 @@
                     </div>
                     <div class="post-tools">
                         <div><button type="button" id="submit-btn" class="submit-btn">Post</button></div>
-                        <div><input type="file" id="imgpath"></div>
+                        <div><input type="file" class="imgpath" id="imgpath"></div>
                     </div>
                     <div id="message" class="message"></div>
                 </form>
@@ -54,28 +54,26 @@
         </div>
         <div class="container">
             <div class="main-container">
-    
                 <!-- post card -->
-                <div class="postcard-main">
-                    <div class="postcard-content">
+                <div id="postZone" class="postcard-main">  
+                    <div class="postcard-content" id="posttmpl" hidden>
                         <p id="post-content" class="post-content"></p>
                         <div class="post-header">
                             <div class="post-name">
                                 <img src="./assets/img/movies.jpeg" class="img-user">
-                                <p id="userposted" class="userposted">nombre</p>
+                                <p id="userposted" class="userposted">name</p>
                             </div>
                             <div>
-                                <p>fecha</p>
+                                <p>Date</p>
                             </div>
                         </div>
                         <div class="post-text">
-                            <textarea name="post-text" id="post-text" cols="30" rows="10">Texto </textarea>
+                            <textarea name="post-text" id="post-text" cols="30" rows="10">Text</textarea>
                         </div>
                         <div class="post-img">
                             <p>imagen</p>
                         </div>
-                    </div>
-    
+                    </div>                            
                 </div>
             </div>
         </div>    

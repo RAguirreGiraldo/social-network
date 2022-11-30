@@ -159,8 +159,8 @@ button{
   align-content: center;
 }
 
-.img-post{
-  background-color: #ffffff;
+.imgpath {
+  color: var(--app-light-bg);
 }
 
 .post-tools {
