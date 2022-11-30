@@ -9,7 +9,6 @@ document.getElementById('submit-btn').addEventListener("click", newPost);
 function newUser(){
     let actualUser = new User(1,"Roberto","RobertoUser","roberto@gm.com");
     let data = actualUser.getInfo();
-    //console.log(data);    
 }
 
 function newPost(){
