@@ -10,6 +10,21 @@
     --app-blue:#3c57ff;
     --app-blue-hover:#364ee6;
     --app-light-bg: #ffffff;
+    --app-darkinput: #0f1014;
+}
+
+.container {
+  width: min(100% - 30px, 1080px);
+  margin-inline: auto;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: center;
 }
 
 body {
@@ -28,7 +43,7 @@ body {
 }
 
 .menu {
-  color: white;  
+  color: var(--app-light-bg);  
   flex-direction: row;
   padding: 10px;  
 }
@@ -39,7 +54,7 @@ li {
 }
 
 li a {  
-  color: white;
+  color: var(--app-light-bg);
   text-align: center;
 }
 
@@ -58,26 +73,14 @@ li a {
   border-radius: 25px;
 }
 
-.data-input, .contact-zone{    
-  padding: 20px 0;
-  margin: 30px 0;  
-}
-
-.data-input > h1, .contact-zone > h3 {    
-  padding: 10px 0;
-  text-align: center;
-  font-size: 25px;   
-  color: var(--app-light-bg); 
-}
-
 .data-input{
-  color:rgb(77, 77, 77);
+  color: var(--app-dark-bg);
   text-align:start;
   background-color: transparent transparent;
 }
 
 .input-control{
-  background-color: #0f1014; 
+  background-color: var(--app-darkinput); 
   color: var(--app-light-bg);
   width: 650px;
   height: 180px;
@@ -86,13 +89,6 @@ li a {
   font-size: 16px;
   font-weight: 16px;
   text-align: left;
-}
-
-.contact-item{
-  color: var(--app-light-bg);
-  border-radius: 5px;
-  margin-top: 10px;
-  margin-right: 15px;
 }
 
 button{
@@ -112,20 +108,6 @@ button{
   position: absolute;
   overflow: visible;
   margin: 10px;
-}
-
-.grid-container {
-  display: grid;
-  width: 500px;
-  height: 500px;
-  background: rgb(27, 27, 23);
-  grid-template-rows: 50px 50px 50px 50px;
-  grid-template-columns: 50px 50px 50px 50px;
-  grid-gap: 5px;
-  margin-top: 50px;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
 }
 
 .submit-btn {
@@ -149,16 +131,6 @@ button{
   height: 100px;
   background-color: var(--app-light-bg);
 }
-
-.main-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  align-content: center;
-}
-
 
 .imgpath {
   color: var(--app-light-bg);
