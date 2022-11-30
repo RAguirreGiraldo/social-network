@@ -8,7 +8,7 @@ export default class User{
     }
 
     get #getId(){
-        return this._id;
+        return this._id;        
     }
 
     get #getName(){
@@ -23,9 +23,8 @@ export default class User{
         return this._username;
     }
 
-    getInfo(id, userName, email, name){ 
-        info = [ id,userName,email,name ];
+    getInfo(){ 
+        let info = [ this.id,this.userName,this.email,this.name ];
         return info;
-    }
-    
+    } 
 }
